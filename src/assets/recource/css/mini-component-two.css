@@ -1,0 +1,10 @@
+#box-wrapper {
+    margin-top: 9px;
+    display: grid;
+    justify-content: center;
+    width: 60%;
+    align-items: center;
+    height: 200px;
+    border-radius: 25px;
+    background-color: #202020;
+}

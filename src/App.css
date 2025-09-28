@@ -4,8 +4,32 @@
 }
 
 #block-one {
-    display: grid;
+    display: flex;
     width: 1170px;
     height: 600px;
-    margin-top: 15px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#block-left-box {
+    display: grid;
+    width: 578px;
+    height: 100%;
+    margin-right: 15px;
+    justify-content: center;
+}
+
+#block-comps-one-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#block-right-box {
+    display: grid;
+    width: 577px;
+    height: 100%;
+    background-color: white;
+    border-radius: 25px;
+
 }

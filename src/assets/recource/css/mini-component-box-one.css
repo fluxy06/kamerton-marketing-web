@@ -1,0 +1,86 @@
+#mini-block-one-wrapper {
+    display: grid;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    border-radius: 25px;
+    margin-top: 9px;
+    padding-bottom: 31px;
+    padding-left: 21px;
+    padding-right: 20px;
+    padding-top: 31px;
+    margin-right: 15px;
+}
+
+#mini-mini-block-one {
+    display: grid;
+    justify-content: center;
+    width: 240px;
+    height: 138px;
+    align-items: center;
+}
+
+#mini-block-box-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#number-box {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+#mini-block-one-text {
+    font-family: 'Montserrat Alternates', sans-serif;
+    line-height: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#container-examples-locate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 21px;
+    margin-right: 20px;
+}
+
+#container-examples-locate img {
+    width: 50px;
+    height: 50px;
+    background-color: #202020;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    margin-left: -15px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+#container-examples-locate img:first-child {
+    margin-left: 0;
+}
+
+#container-examples-locate img:hover {
+    transform: translateY(-5px);
+    z-index: 10;
+    transition: 0.3s ease;
+}
+
+#box-image-one { z-index: 5; }
+#box-image-two { z-index: 4; }
+#box-image-three { z-index: 3; }
+#box-image-four { z-index: 2; }
+#box-image-five { z-index: 1; }
+
+/* Стили для кнопки */
+#button-image-next {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: -15px;
+}
