@@ -1,0 +1,42 @@
+#container-block-info {
+    display: grid;
+    justify-content: start; /* выравнивание по левому краю */
+    align-content: start; /* выравнивание по верхнему краю */
+    width: 332.97px;
+    height: 178.57px;
+    background-color: #202020;
+    border-radius: 25px;
+    margin-top: 11.91px;
+    padding: 20px; /* внутренние отступы */
+    box-sizing: border-box; /* чтобы padding не увеличивал размер */
+    overflow: hidden; /* скрываем всё что выходит за границы */
+}
+
+#iphone-smile {
+    font-size: 35.96px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    margin: 0 0 10px 0; /* отступ снизу */
+}
+
+#title {
+    font-size: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    margin: 0 0 8px 0; /* отступ снизу */
+}
+
+#info {
+    display: grid;
+    justify-content: left;
+    text-align: start;
+    width: 287px;
+    height: 40px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    line-height: 1.1; /* межстрочный интервал */
+    white-space: pre-line; /* сохраняет переносы строк из текста */
+}

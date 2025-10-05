@@ -1,0 +1,17 @@
+#block-hello-part-two {
+    display: grid;
+    text-align: left;
+    align-content: center;
+    width: 577px;
+    height: 340px;
+    margin-left: 15px;
+    border-radius: 15px;
+}
+
+
+#text-demo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 40px;
+}

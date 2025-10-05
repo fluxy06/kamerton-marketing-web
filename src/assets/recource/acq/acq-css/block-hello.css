@@ -1,0 +1,44 @@
+#block-hello {
+    display: grid;
+    width: 578px;
+    height: 340px;
+    border-radius: 15px;
+}
+
+#about-as {
+    margin-left: 38px;
+    height: 30px;
+    width: 130px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: inset 0 0px 0 rgba(255, 255, 255, 0.4), 
+                0 0 6px rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.250);
+    border: 0px;
+    border-radius: 25px;
+    color: white;
+    transition: 0.7s ease;
+}
+
+#about-as:hover {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 140px;
+    box-shadow: inset 0 0px 0 rgba(255, 255, 255, 0.74), 
+                0 0 6px rgb(255, 255, 255);
+    height: 30px;
+    background-color: hsla(0, 0%, 100%, 0.25);
+    color: white;
+    transition: 1s ease;
+}
+
+#go-hello {
+    font-size: 48px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: left;
+    margin-left: 62px;
+    font-weight: 900;
+    margin-bottom: 100px;
+}

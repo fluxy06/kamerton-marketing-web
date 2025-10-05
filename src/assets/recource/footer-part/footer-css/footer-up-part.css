@@ -1,0 +1,107 @@
+#footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 1170px;
+    margin-top: 31px;
+}
+
+#footer-wrapper h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#footer-wrapper h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#left-footer-box {
+    display: grid;
+    width: 373px;
+    height: 188px;
+    justify-content: baseline;
+    margin-right: 23px;
+    align-content: baseline;
+}
+
+#midle-footer-box {
+    display: grid;
+    width: 373px;
+    height: 188px;
+    justify-content: baseline;
+    margin-left: 46px;
+    margin-right: 58.37px;
+    align-content: baseline;
+}
+
+#right-footer-box {
+    display: grid;
+    width: 373px;
+    height: 188px;
+    justify-content: baseline;
+    align-content: baseline;
+}
+
+#logo-text {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 44px;
+    font-weight: 900;
+    margin-bottom: -5px;
+    margin-top: 0px;
+}
+
+#text-footer-p {
+    font-family: 'Montserrat', sans-serif;
+    color: hsla(0, 0%, 100%, 0.700);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: -12px;
+    line-height: 110%;
+}
+
+#text-navigation {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    font-weight: 650;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#box-navigation-footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    margin-bottom: 20px;
+    row-gap: 5px;
+}
+
+#box-navigation-footer a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500px;
+    font-size: 16px;
+}
+
+#footer-our-contacts {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 7.6px;
+}
+
+#num-footer {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: -10px;
+}
+
+#adres-footer {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: -10px;
+}

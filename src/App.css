@@ -3,12 +3,49 @@
     justify-content: center;
 }
 
+#head {
+    width: 1170.4px;
+    height: 50px;
+}
+
 #block-one {
     display: flex;
     width: 1170px;
     height: 600px;
     align-items: center;
     margin-top: 40px;
+}
+
+#block-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    height: 340px;
+    margin-top: 25px;
+}
+
+#block-tree {
+    display: grid;
+    justify-content: space-between;
+    width: 1170px;
+    height: 600px;
+    margin-top: 25px;
+}
+
+#block-four {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 1170px;
+    height: 475px;
+}
+
+#block-five {
+    display: grid;
+    width: 1170px;
+    height: 270px;
+    justify-content: center;
 }
 
 #block-left-box {
@@ -29,7 +66,10 @@
     display: grid;
     width: 577px;
     height: 100%;
-    background-color: white;
     border-radius: 25px;
+}
 
+#logo-image {
+    width: 100%;
+    height: 100%;
 }

@@ -1,0 +1,39 @@
+#burger-button {
+    display: grid;
+    justify-content: baseline;
+    align-content: center;
+    box-sizing: border-box;
+    width: 1170px;
+    height: 44px;
+    border-radius: 25px;
+    align-items: center;
+}
+
+#button-demo {
+    margin-left: 38px;
+    height: 30px;
+    width: 130px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: inset 0 0px 0 rgba(255, 255, 255, 0.4), 
+                0 0 6px rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.250);
+    border: 0px;
+    border-radius: 25px;
+    color: white;
+    transition: 0.7s ease;
+}
+
+#button-demo:hover {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 140px;
+    box-shadow: inset 0 0px 0 rgba(255, 255, 255, 0.74), 
+                0 0 6px rgb(255, 255, 255);
+    height: 30px;
+    background-color: hsla(0, 0%, 100%, 0.25);
+    color: white;
+    transition: 1s ease;
+}

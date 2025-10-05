@@ -1,0 +1,70 @@
+#card-wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: baseline;
+    width: 380px;
+    height: 500px;
+    background-color: #202020;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+#img-banner {
+    display: grid;
+    width: 380px;
+    height: 367px;
+    opacity: 90%;
+    border-radius: 25px;
+    transition: 0.7s ease;
+    justify-content: right;
+}
+
+#img-banner:hover {
+    width: 380px;
+    height: 367px;
+    border-radius: 25px;
+    opacity: 100%;
+    transition: 0.4s ease;
+}
+
+#button-scroll-up {
+    background-image: url('../../../img/button-scale-up.svg');
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    margin-right: 15px;
+    border: 0px;
+    filter: drop-shadow(0.5px 0.5px 1.5px rgb(98, 98, 98));
+    border-radius: 25px;
+    transition: 0.5s ease;
+}
+
+#button-scroll-up:hover {
+    filter: drop-shadow(0.5px 0.5px 1.5px rgb(255, 255, 255));
+    transition: 0.5s ease;
+}
+
+#block-market {
+    width: 380px;
+    height: 123px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#reclam {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+#gabar {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    opacity: 80%;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 33px;
+}
