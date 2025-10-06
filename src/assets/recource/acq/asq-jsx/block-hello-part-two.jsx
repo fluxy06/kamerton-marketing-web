@@ -13,6 +13,7 @@ class BlockHelloPart extends Component {
                         Мы ценим ваше доверие и строим долгосрочные
                         партнерские отношения, основанные на качестве,
                         ответственности и взаимном уважении.</p>
+                    <button id="button-block-hello-contact">Связаться</button>
             </div>
         )
     }

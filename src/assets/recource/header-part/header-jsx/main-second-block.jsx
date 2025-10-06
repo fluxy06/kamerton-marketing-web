@@ -13,7 +13,7 @@ class MiniComponentTwo extends Component {
                     </div>
                 </div>
                 <div id="box-infografic">
-                    <img src="../src/assets/img/" alt="infografic" id="infografic-img"/>
+                    <img src="../src/assets/img/infografh.svg" alt="infografic" id="infografic-img"/>
                     <div id="line-bottom"></div>
                 </div>
             </div>

@@ -32,18 +32,26 @@
 }
 
 #box-infografic {
+    display: grid;
     margin-top: 20px;
     display: grid;
     justify-content: center;
     align-content: center;
+    align-items: center;
     width: 240px;
     height: 72px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 
 
 #line-bottom {
     width: 240px;
-    height: 1px;
+    height: 2px;
     background-color: #404040;
+    margin-bottom: 20px;
+}
+
+#infografic-img {
+    width: 185px;
+    height: 70px;
 }
