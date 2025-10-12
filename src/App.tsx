@@ -1,5 +1,4 @@
-import { useState } from 'react'
-
+import { useState, useEffect } from 'react'
 import './App.css'
 import Header from './assets/recource/header-part/header-jsx/header';
 import MainBlock from './assets/recource/header-part/header-jsx/main-block';
@@ -13,43 +12,60 @@ import BlockCards from './assets/recource/demo-part/demo-jsx/block-cards';
 import BigComponent from './assets/recource/contact-part/contact-jsx/big-info';
 import FooterUP from './assets/recource/footer-part/footer-jsx/footer-up-part';
 import FooterBot from './assets/recource/footer-part/footer-jsx/footer-bot-part';
+import MobileAcq from './assets/recource/acq/mobile/mobile-acq';
 
 function App() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1199);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1199);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <>
-    <div id="window-wrapper">
-      <div id='head'>
-        <Header/>
-      </div>
-      <div id='block-one'>
-        <div id='block-left-box'>
-          <MainBlock/>
-          <div id='block-comps-one-two'>
-            <MiniComponentOne/>
-            <MiniComponentTwo/>
+      <div id="window-wrapper">
+        <div id='head'>
+          <Header/>
+        </div>
+        <div id='block-one'>
+          <div id='block-left-box'>
+            <MainBlock/>
+            <div id='block-comps-one-two'>
+              <MiniComponentOne/>
+              <MiniComponentTwo/>
+            </div>
+          </div>
+          <div id='block-right-box'>
+            <img id='logo-image' src="../src/assets/img/img-card.svg" alt="" />
           </div>
         </div>
-        <div id='block-right-box'>
-          <img id='logo-image' src="../src/assets/img/img-card.svg" alt="" />
+        <div id='block-two'>
+          {isMobile ? (
+            <MobileAcq/>
+          ) : (
+            <>
+              <BlockHello/>
+              <BlockHelloPart/>
+            </>
+          )}
         </div>
-      </div>
-      <div id='block-two'>
-        <BlockHello/>
-        <BlockHelloPart/>
-      </div>
-      <div id='block-tree'>
+        <div id='block-tree'>
           <ButtonDemo/>
           <BlockCards/>
-      </div>
-      <div id='block-four'>
-        <BigComponent/>
-      </div>
-      <div id='block-five'>
+        </div>
+        <div id='block-four'>
+          <BigComponent/>
+        </div>
+        <div id='block-five'>
           <FooterUP/>
           <FooterBot/>
+        </div>
       </div>
-    </div>
     </>
   )
 }

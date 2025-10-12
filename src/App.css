@@ -1,4 +1,5 @@
-#window-wrapper {
+
+    #window-wrapper {
     display: grid;
     justify-content: center;
 }
@@ -6,6 +7,7 @@
 #head {
     width: 1170.4px;
     height: 50px;
+    margin-bottom: 15px;
 }
 
 #block-one {
@@ -76,4 +78,48 @@
 
 button {
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 1199px) {
+    #window-wrapper {
+        display: grid;
+        justify-content: center;
+    }
+
+    #head {
+        display: flex;
+        justify-content: center; /* центрирование содержимого */
+        width: 100%; /* занимает всю ширину */
+        margin-bottom: -15px;
+    }
+
+
+    #block-one {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    #block-right-box {
+        order: -1;
+        width: 288.13px;
+        height: 299.62px;
+        display: grid;
+        justify-items: center;
+    }
+
+    #block-left-box {
+        order: 2;
+        width: 100%;
+        display: grid;
+        justify-items: center;
+    }
+
+    #logo-image {
+        width: 288.13px;
+        height: 299.62px;
+    }
 }
