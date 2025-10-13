@@ -40,3 +40,51 @@
     line-height: 1.1; /* межстрочный интервал */
     white-space: pre-line; /* сохраняет переносы строк из текста */
 }
+
+
+@media screen and (max-width: 1099px) {
+    #container-block-info {
+    display: grid;
+    justify-content: start; /* выравнивание по левому краю */
+    align-content: start; /* выравнивание по верхнему краю */
+    width: 100%;
+    max-width: 140px;
+    height: 100%;
+    max-height: 80px;
+    background-color: #202020;
+    border-radius: 25px;
+    margin-top: 11.91px;
+    padding: 20px; /* внутренние отступы */
+    box-sizing: border-box; /* чтобы padding не увеличивал размер */
+    overflow: hidden; /* скрываем всё что выходит за границы */
+    }
+
+    #iphone-smile {
+        font-size: 18px;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 600;
+        text-align: left;
+        margin: 0 0 10px 0; /* отступ снизу */
+    }
+
+    #title {
+        font-size: 11px;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 600;
+        text-align: left;
+        margin: 0 0 8px 0; /* отступ снизу */
+    }
+
+    #info {
+        display: grid;
+        justify-content: left;
+        text-align: start;
+        width: 120px;
+        height: 18px;
+        font-size: 8px;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0 auto;
+        line-height: 1.1; /* межстрочный интервал */
+        white-space: pre-line; /* сохраняет переносы строк из текста */
+    }
+}

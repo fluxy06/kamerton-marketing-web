@@ -1,0 +1,28 @@
+#mobile-contact-block {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+}
+
+#mobile-contact-block p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+#up-mobile-block {
+    display: flex;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 8px;
+}
+
+#bot-mobile-block {
+    display: flex;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 8px;
+}

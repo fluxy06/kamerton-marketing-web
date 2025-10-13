@@ -4,7 +4,7 @@ class MobileAcq extends Component {
     render() {
         return(
             <div id="mobile-acq-block">
-                <button id="mobile-button-about-as">О нас</button>
+                <button id="mobile-button-about-as">о нас</button>
                 <div id="mobile-about-as-text">
                     <h1 id="mobile-h1">Давайте знакомится</h1>
                     <p id="mobile-p">Мы — команда профессионалов из Богородска,

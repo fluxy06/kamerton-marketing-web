@@ -125,7 +125,7 @@
     }
 
     #contact-header {
-        width: 110.33px;
+        width: 105px;
         height: 9px;
         font-family: 'Montserrat Alternates', sans-serif;
         font-weight: bold;
@@ -141,13 +141,13 @@
     }
 
     #contact-header:hover {
-        width: 105px;
+        width: 115px;
         height: 10px;
         font-family: 'Montserrat Alternates', sans-serif;
         font-weight: bold;
-        font-size: 12.61px;
+        font-size: 12px;
         height: 40px;
-        background-color: #218E0B;
+        background-color: #26A50D;
         box-shadow: inset 0 0px 0 rgba(255, 255, 255, 0.4), 
                     0 0 6px rgba(255, 255, 255, 0.6);
         border: 0px;

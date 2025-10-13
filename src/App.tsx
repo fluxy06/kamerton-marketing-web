@@ -13,6 +13,8 @@ import BigComponent from './assets/recource/contact-part/contact-jsx/big-info';
 import FooterUP from './assets/recource/footer-part/footer-jsx/footer-up-part';
 import FooterBot from './assets/recource/footer-part/footer-jsx/footer-bot-part';
 import MobileAcq from './assets/recource/acq/mobile/mobile-acq';
+import MiniButton from './assets/recource/mini-components/MiniButton';
+import MobileContactComponent from './assets/recource/contact-part/mobile/MobileContact';
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1199);
@@ -57,18 +59,21 @@ function App() {
         <div id='block-tree'>
           { isMobile ? (
             <>
+            <MiniButton
+            contentButton="услуги"
+            />
             <CardComponent
-                    imageUrl="../src/assets/img/img-card.svg"
+                    imageUrl="../src/assets/img/mobile-img-card.svg"
                     title="Сити-щиты"
                     dimensions="размеры: 1.2x1.8m"
                  />
             <CardComponent
-                    imageUrl="../src/assets/img/img-card-two.svg"
+                    imageUrl="../src/assets/img/mobile-img-card-two.svg"
                     title="Биллборды"
                     dimensions="размеры: 2x4, 3x6m"
                  />
             <CardComponent
-                    imageUrl="../src/assets/img/img-card-three.svg"
+                    imageUrl="../src/assets/img/mobile-img-card-three.svg"
                     title="Печать баннеров"
                     dimensions="размеры: следует уточнить"
                  />
@@ -83,7 +88,16 @@ function App() {
 
         </div>
         <div id='block-four'>
-          <BigComponent/>
+          {isMobile ? (
+            <>
+            <MobileContactComponent/>
+            </>
+          ) : (
+              <>
+              <BigComponent/>
+              </>
+          )
+          }
         </div>
         <div id='block-five'>
           <FooterUP/>

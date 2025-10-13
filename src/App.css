@@ -123,6 +123,17 @@ button {
         gap: 12px;
     }
 
+    #block-four {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 440px;
+        height: 100%;
+        max-height: 441px;
+        margin-top: 16px;
+    }
+
     #block-right-box {
         order: -1;
         width: 288.13px;
@@ -130,6 +141,8 @@ button {
         display: grid;
         justify-items: center;
     }
+
+    
 
     #block-left-box {
         order: 2;

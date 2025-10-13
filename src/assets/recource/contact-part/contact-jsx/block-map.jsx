@@ -5,7 +5,7 @@ class BlockMap extends Component {
     render() {
         return(
             <div>
-
+                
             </div>
         )
     }
