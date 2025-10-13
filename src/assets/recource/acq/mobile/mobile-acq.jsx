@@ -1,5 +1,5 @@
 import { Component } from "react";
-
+import '../mobile/mobile-acq.css'
 class MobileAcq extends Component {
     render() {
         return(
@@ -15,7 +15,7 @@ class MobileAcq extends Component {
                         партнерские отношения, основанные на качестве,
                         ответственности и взаимном уважении.</p>
                 </div>
-                <button id="mobile-button-contact">Связаться</button>
+                <button id="mobile-button-contact">cвязаться</button>
             </div>
         )
     }

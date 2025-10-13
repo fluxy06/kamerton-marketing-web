@@ -1,0 +1,87 @@
+#mobile-acq-block {
+    width: 100%;
+    max-width: 321px;
+    display: grid;
+    height: auto;
+    justify-content: center;
+    margin-top: 15.67px;
+}
+
+
+#mobile-button-about-as {
+    margin-top: 4px;
+    margin-left: 21px;
+    width: 78px;
+    height: 18px;
+    font-size: 12px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+    border: 0px;
+    background-color: hsla(0, 0%, 100%, 0.25);
+    border-radius: 25px;
+    box-shadow: inset 0 0px 0 rgba(255, 255, 255, 0.4), 
+                0 0 3px rgba(255, 255, 255, 0.6);
+    transition: 0.6s ease-out;
+}
+
+#mobile-button-about-as:hover {
+    margin-top: 4px;
+    margin-left: 21px;
+    width: 83px;
+    height: 18px;
+    font-size: 12px;
+    color: white;
+    border: 0px;
+    background-color: hsla(0, 0%, 100%, 0.25);
+    border-radius: 25px;
+    box-shadow: inset 0 0px 0 rgba(255, 255, 255, 0.74), 
+                0 0 6px rgb(255, 255, 255);
+    transition: 0.6s ease-out;
+}
+
+
+
+#mobile-acq-block h1 {
+    font-weight: 900;
+    font-size: 32px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#mobile-acq-block p {
+    margin-top: -10px;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-bottom: 20px;
+}
+
+#mobile-button-contact {
+    width: 95%;
+    height: 35px;
+    font-size: 18px;
+    font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: bold;
+    border-radius: 25px;
+    color: white;
+        box-shadow: inset 0 0px 0 rgba(255, 255, 255, 0.4), 
+                    0 0 6px rgba(255, 255, 255, 0.6);
+    border: 0px;
+    background-color: #26A50D;
+    transition: 0.7s ease-out;
+}
+
+#mobile-button-contact:hover {
+    width: 100%;
+    height: 35px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: bold;
+    border-radius: 25px;
+    background-color: #218E0B;
+        box-shadow: inset 0 0px 0 rgba(255, 255, 255, 0.4), 
+                    0 0 6px rgba(255, 255, 255, 0.6);
+    border: 0px;
+    background-color: #26A50D;
+    transition: 0.7s ease-out;
+}
