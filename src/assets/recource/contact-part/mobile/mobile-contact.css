@@ -6,7 +6,7 @@
     height: auto;
 }
 
-#mobile-contact-block p {
+#ready {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 600;
@@ -25,4 +25,10 @@
     justify-content: center;
     row-gap: 30px;
     column-gap: 8px;
+}
+
+#cont {
+    width: 96px;
+    height: 18px;
+    margin-left: -15px;
 }

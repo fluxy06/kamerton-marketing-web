@@ -7,8 +7,8 @@ class MobileContactComponent extends Component {
     render() {
         return(
             <div id="mobile-contact-block">
-                <MiniButton contentButton="контакты"/>
-                <p>Готовы начать работу?<br/>Свяжитесь с нами удобным для вас<br/>способом.</p>
+                <MiniButton id="cont" contentButton="контакты"/>
+                <p id="ready">Готовы начать работу?<br/>Свяжитесь с нами удобным для вас<br/>способом.</p>
                 <div id="up-mobile-block">
                     <BlockInfo
                             iphone_smile="📍"
