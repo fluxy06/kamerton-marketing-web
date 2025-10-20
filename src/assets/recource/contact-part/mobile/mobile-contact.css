@@ -32,3 +32,16 @@
     height: 18px;
     margin-left: -15px;
 }
+
+#map-mobile {
+    margin-top: 12px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    border-radius: 12px;
+    background-color: #202020;
+    height: 156px;
+    max-width: 308px;
+}

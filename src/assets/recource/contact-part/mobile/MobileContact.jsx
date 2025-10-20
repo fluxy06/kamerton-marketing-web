@@ -37,6 +37,9 @@ class MobileContactComponent extends Component {
                                 double_info="Сб-Вс: 10:00 - 20:00"
                     />
                 </div>
+                <div id="map-mobile">
+                    <p>Интеграция карты</p>
+                </div>
             </div>
         )
     }

@@ -1,0 +1,124 @@
+#mobile-footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 602.54px;
+}
+
+
+
+#mobile-footer h1 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    margin-bottom: 16px;
+    filter: drop-shadow(0.1px 0.1px 1.5px rgb(255, 255, 255));
+}
+
+#mobile-footer-up-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+#mobile-icons-soc {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    column-gap: 66.38px;
+}
+
+#mobile-icons-soc a {
+    transition: 0.7s ease-out;
+}
+
+#mobile-icons-soc a:hover {
+    filter: drop-shadow(0.5px 0.5px 1.5px rgb(255, 255, 255));
+    transition: 0.7s ease-in-out;
+}
+
+#mobile-our-contacts {
+    margin-top: -20px;
+}
+
+#mob-or-cont {
+    font-size: 18px;
+    font-family: 'Montserrat Alternates',sans-serif;
+    font-weight: 700;
+}
+
+#mob-or-cont p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#mobile-navigation {
+
+}
+
+#mob-nav {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#mobile-navigation {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-top: -20px;
+}
+
+#mobile-block-navi {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5px;
+    row-gap: 10px;
+}
+
+#mobile-block-navi a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsla(0, 0%, 100%, 0.800);
+    transition: 0.7s ease;
+}
+
+#mobile-block-navi a:hover {
+    color: white;
+     filter: drop-shadow(0.5px 0.5px 1px rgb(255, 255, 255));
+     transition: 0.7s ease-in-out;
+}
+
+#mobile-footer-stroke {
+    margin-top: 6px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 440px;
+    height: 1px;
+    background-color: white;
+}
+
+#footer-mobile-final {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-top: 16px;
+    row-gap: 10px;
+}
+
+#footer-mobile-final a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(0, 0%, 80%);
+}

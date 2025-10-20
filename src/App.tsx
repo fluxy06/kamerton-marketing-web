@@ -15,6 +15,7 @@ import FooterBot from './assets/recource/footer-part/footer-jsx/footer-bot-part'
 import MobileAcq from './assets/recource/acq/mobile/mobile-acq';
 import MiniButton from './assets/recource/mini-components/MiniButton';
 import MobileContactComponent from './assets/recource/contact-part/mobile/MobileContact';
+import MobileFooter from './assets/recource/footer-part/footer-mobile/MobileFooter';
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1199);
@@ -99,10 +100,18 @@ function App() {
           )
           }
         </div>
-        <div id='block-five'>
-          <FooterUP/>
-          <FooterBot/>
-        </div>
+        {
+          isMobile ? (
+            <>
+            <MobileFooter/>
+            </>
+          ) : (
+            <div id='block-five'>
+                      <FooterUP/>
+                      <FooterBot/>
+            </div>
+          )
+        }
       </div>
     </>
   )
