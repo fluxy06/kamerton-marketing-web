@@ -81,8 +81,9 @@
     display: grid;
     justify-content: center;
     align-content: center;
-    margin-top: 5px;
+    margin-top: -3px;
     row-gap: 10px;
+    margin-bottom: 7px;
 }
 
 #mobile-block-navi a {

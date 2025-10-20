@@ -18,11 +18,11 @@ import MobileContactComponent from './assets/recource/contact-part/mobile/Mobile
 import MobileFooter from './assets/recource/footer-part/footer-mobile/MobileFooter';
 
 function App() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1199);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 440);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1199);
+      setIsMobile(window.innerWidth <= 440);
     };
 
     window.addEventListener('resize', handleResize);
@@ -32,9 +32,11 @@ function App() {
   return (
     <>
       <div id="window-wrapper">
-        <div id='head'>
+      <div id='header-content'>
+          <div id='head'>
           <Header/>
         </div>
+      </div>
         <div id='block-one'>
           <div id='block-left-box'>
             <MainBlock/>

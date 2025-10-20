@@ -15,7 +15,9 @@ class MobileAcq extends Component {
                         партнерские отношения, основанные на качестве,
                         ответственности и взаимном уважении.</p>
                 </div>
-                <button id="mobile-button-contact">cвязаться</button>
+                <div id="but-mob-cont">
+                    <button id="mobile-button-contact">cвязаться</button>
+                </div>
             </div>
         )
     }
