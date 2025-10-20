@@ -19,8 +19,6 @@
     -webkit-backdrop-filter: blur(30px);
     color: white;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    
-    /* Центрируем содержимое внутри шапки */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +30,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* или flex-start, center - в зависимости от вашего дизайна */
+    justify-content: space-between;
     padding: 0 20px;
     box-sizing: border-box;
 }
@@ -45,7 +43,6 @@
     margin-top: 90px;
 }
 
-/* Остальные ваши стили без изменений */
 #block-two {
     display: flex;
     justify-content: space-between;
