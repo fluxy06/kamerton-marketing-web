@@ -16,6 +16,7 @@ import MobileAcq from './assets/recource/acq/mobile/mobile-acq';
 import MiniButton from './assets/recource/mini-components/MiniButton';
 import MobileContactComponent from './assets/recource/contact-part/mobile/MobileContact';
 import MobileFooter from './assets/recource/footer-part/footer-mobile/MobileFooter';
+import ContactForm from './assets/recource/forms/form-auth/formAuth';
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 440);
@@ -111,6 +112,7 @@ function App() {
             <div id='block-five'>
                       <FooterUP/>
                       <FooterBot/>
+                      <ContactForm/>
             </div>
           )
         }
