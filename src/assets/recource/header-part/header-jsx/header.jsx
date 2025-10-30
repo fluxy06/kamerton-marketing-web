@@ -1,9 +1,11 @@
+// Header.jsx
 import { Component } from "react";
-import '../css-header/header.css'
+import '../css-header/header.css';
 
 class Header extends Component {
     render() {
-        return(
+        const { onContactClick } = this.props; // получаем функцию из App
+        return (
             <div id="header">
                 <h1 id="logo-text-header">КАМЕРТОН</h1>
                 <div id="right-header-nav">
@@ -13,11 +15,13 @@ class Header extends Component {
                         <p id="header-nav"><a href="#" id="contacts">контакты</a></p>
                     </div>
                     <div id="button-container-header">
-                        <button id="contact-header">связаться</button>
+                        <button id="contact-header" onClick={onContactClick}>
+                            связаться
+                        </button>
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 }
 

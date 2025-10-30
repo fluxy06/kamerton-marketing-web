@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+
+// Импорты компонентов
 import Header from './assets/recource/header-part/header-jsx/header';
 import MainBlock from './assets/recource/header-part/header-jsx/main-block';
 import MiniComponentOne from './assets/recource/header-part/header-jsx/mini-block-one';
@@ -20,105 +22,115 @@ import ContactForm from './assets/recource/forms/form-auth/formAuth';
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 440);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 440);
-    };
-
+    const handleResize = () => setIsMobile(window.innerWidth <= 440);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // Управление модалкой
+  const openModal = () => {
+    setIsModalOpen(true);
+    document.body.style.overflow = 'hidden'; // блокируем скролл при открытии
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    document.body.style.overflow = 'auto'; // возвращаем скролл
+  };
+
   return (
     <>
-      <div id="window-wrapper">
-      <div id='header-content'>
+      <div id="window-wrapper" className={isModalOpen ? 'blurred-background' : ''}>
+        <div id='header-content'>
           <div id='head'>
-          <Header/>
+            <Header onContactClick={openModal} />
+          </div>
         </div>
-      </div>
+
         <div id='block-one'>
           <div id='block-left-box'>
-            <MainBlock/>
+            <MainBlock />
             <div id='block-comps-one-two'>
-              <MiniComponentOne/>
-              <MiniComponentTwo/>
+              <MiniComponentOne />
+              <MiniComponentTwo />
             </div>
           </div>
           <div id='block-right-box'>
             <img id='logo-image' src="../src/assets/img/img-card.svg" alt="" />
           </div>
         </div>
+
         <div id='block-two'>
           {isMobile ? (
-            <MobileAcq/>
+            <MobileAcq />
           ) : (
             <>
-              <BlockHello/>
-              <BlockHelloPart/>
+              <BlockHello />
+              <BlockHelloPart />
             </>
           )}
         </div>
-        <div id='block-tree'>
-          { isMobile ? (
-            <>
-            <MiniButton
-            contentButton="услуги"
-            />
-            <CardComponent
-                    imageUrl="../src/assets/img/mobile-img-card.svg"
-                    title="Сити-щиты"
-                    dimensions="размеры: 1.2x1.8m"
-                 />
-            <CardComponent
-                    imageUrl="../src/assets/img/mobile-img-card-two.svg"
-                    title="Биллборды"
-                    dimensions="размеры: 2x4, 3x6m"
-                 />
-            <CardComponent
-                    imageUrl="../src/assets/img/mobile-img-card-three.svg"
-                    title="Печать баннеров"
-                    dimensions="размеры: следует уточнить"
-                 />
-                 </>
-          ) : (
-            <>
-              <ButtonDemo/>
-              <BlockCards/>
-            </>
-          )
-          }
 
-        </div>
-        <div id='block-four'>
+        <div id='block-tree'>
           {isMobile ? (
             <>
-            <MobileContactComponent/>
+              <MiniButton contentButton="услуги" />
+              <CardComponent
+                imageUrl="../src/assets/img/mobile-img-card.svg"
+                title="Сити-щиты"
+                dimensions="размеры: 1.2x1.8m"
+              />
+              <CardComponent
+                imageUrl="../src/assets/img/mobile-img-card-two.svg"
+                title="Биллборды"
+                dimensions="размеры: 2x4, 3x6m"
+              />
+              <CardComponent
+                imageUrl="../src/assets/img/mobile-img-card-three.svg"
+                title="Печать баннеров"
+                dimensions="размеры: следует уточнить"
+              />
             </>
           ) : (
-              <>
-              <BigComponent/>
-              </>
-          )
-          }
-        </div>
-        {
-          isMobile ? (
             <>
-            <MobileFooter/>
+              <ButtonDemo />
+              <BlockCards />
             </>
-          ) : (
-            <div id='block-five'>
-                      <FooterUP/>
-                      <FooterBot/>
-                      <ContactForm/>
-            </div>
-          )
-        }
+          )}
+        </div>
+
+        <div id='block-four'>
+          {isMobile ? <MobileContactComponent /> : <BigComponent />}
+        </div>
+
+        {isMobile ? (
+          <MobileFooter />
+        ) : (
+          <div id='block-five'>
+            <FooterUP />
+            <FooterBot />
+          </div>
+        )}
       </div>
+
+      {/* МОДАЛЬНОЕ ОКНО */}
+      {isModalOpen && (
+        <div className="modal-overlay" onClick={closeModal}>
+          {/* Крестик теперь СВЕРХУ, вне формы */}
+          <button className="modal-close" onClick={closeModal}>✕</button>
+          <div
+            className="modal-content"
+            onClick={(e) => e.stopPropagation()} // не закрывать при клике на саму форму
+          >
+            <ContactForm />
+          </div>
+        </div>
+      )}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
