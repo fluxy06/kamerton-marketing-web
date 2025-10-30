@@ -4,9 +4,8 @@
     align-items: center;
     align-content: center;
     background-color: white;
-    width: 100%;
+    width: 440px;
     height: 100%;
-    max-width: 440px;
     max-height: 700px;
     border-radius: 15px;
     color: black;
@@ -54,7 +53,10 @@
     color: hsl(0, 0%, 0%, 50%);
     background-color: #F3F3F5;
     border: none;
-    width: 360px;
+    width: 100%;
+    min-width: 360px;
+    max-height: 214px;
+    max-width: 360px;
     height: 70px;
     border-radius: 10px;
     padding-top: 10px;
@@ -87,4 +89,130 @@
     font-size: 15.8px;
     color: white;
     font-weight: 700;
+    border: 0px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+    transition: 0.3s ease-in-out;
+}
+
+#sumbit-query:hover {
+    background-color: hsla(110, 85%, 35%, 0.8);
+    transition: 0.6s ease-in-out;
+}
+
+@media screen and (max-width: 440px) {
+
+    /* Контейнер формы */
+    #form-contact {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: white;
+        width: 288px;            /* фиксированная ширина */
+        height: 100%;
+        max-height: 354px;
+        border-radius: 7px;
+        color: black;
+        margin: 0 auto;          /* по центру */
+        box-sizing: border-box;
+    }
+
+    /* Заголовок */
+    #form-contact-header-text {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        margin-top: 22px;
+    }
+
+    #form-contact-header-text h1 {
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 18px;
+        color: black;
+        font-weight: 700;
+        margin-bottom: -5px;
+    }
+
+    #form-contact-header-text p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        font-weight: 600;
+        color: rgb(0, 0, 0, 40%);
+        margin-bottom: 18px;
+    }
+
+    /* Блок с полями */
+    #form-contact-block-info {
+        display: grid;
+        justify-content: center;
+        margin-bottom: 35px;
+        row-gap: 6px;
+    }
+
+    #form-contact-block-info p {
+        font-size: 10px;
+        font-family: 'Montserrat Alternates', sans-serif;
+        text-align: left;
+        font-weight: 450;
+        margin-bottom: 3px;
+    }
+
+    /* Поле для ввода текста */
+    #more-message {
+        color: hsl(0, 0%, 0%, 50%);
+        background-color: #F3F3F5;
+        border: none;
+        width: 235.39px;    
+        max-width: 235.39px; 
+        min-width: 235.39px;
+        height: 45px;
+        min-height: 45px;
+        max-height: 55px;
+        border-radius: 6.55px;
+        padding-top: 10px;
+        padding-left: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        resize: vertical;         /* можно тянуть только по высоте */
+        box-sizing: border-box;
+    }
+
+    /* Поле input */
+    #first-thrid {
+        color: hsl(0, 0%, 0%, 50%);
+        background-color: #F3F3F5;
+        border: none;
+        width: 235.39px;          /* фиксированная ширина */
+        max-width: 235.39px;
+        height: 27px;
+        border-radius: 6.55px;
+        padding-left: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Кнопка */
+    #sumbit-query {
+        margin-top: 5px;
+        width: 235.39px;          /* фиксированная ширина */
+        height: 29px;
+        border-radius: 6.55px;
+        background-color: #26A50D;
+        font-family: 'Inter', sans-serif;
+        font-size: 13px;
+        color: white;
+        font-weight: 700;
+        border: 0px;
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+        transition: 0.3s ease-in-out;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #sumbit-query:hover {
+        background-color: hsla(110, 85%, 35%, 0.8);
+        transition: 0.6s ease-in-out;
+    }
 }
