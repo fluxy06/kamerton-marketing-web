@@ -4,7 +4,7 @@ import '../css-header/header.css';
 
 class Header extends Component {
     render() {
-        const { onContactClick } = this.props; // получаем функцию из App
+        const { onContactClick } = this.props;
         return (
             <div id="header">
                 <h1 id="logo-text-header">КАМЕРТОН</h1>

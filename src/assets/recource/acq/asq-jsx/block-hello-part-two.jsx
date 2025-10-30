@@ -3,6 +3,7 @@ import '../acq-css/block-hello-part-two.css'
 
 class BlockHelloPart extends Component {
     render() {
+        const { onContactClick } = this.props;
         return(
             <div id="block-hello-part-two">
                     <p id="text-demo">Мы — команда профессионалов из Богородска,
@@ -13,7 +14,7 @@ class BlockHelloPart extends Component {
                         Мы ценим ваше доверие и строим долгосрочные
                         партнерские отношения, основанные на качестве,
                         ответственности и взаимном уважении.</p>
-                    <button id="button-block-hello-contact">Связаться</button>
+                    <button id="button-block-hello-contact" onClick={onContactClick}>Связаться</button>
             </div>
         )
     }

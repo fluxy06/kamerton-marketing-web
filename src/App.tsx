@@ -51,8 +51,8 @@ function App() {
         </div>
 
         <div id='block-one'>
-          <div id='block-left-box'>
-            <MainBlock />
+          <div id='block-left-box' className={isModalOpen ? 'blurred-background' : ''}>
+            <MainBlock onContactClick={openModal}/>
             <div id='block-comps-one-two'>
               <MiniComponentOne />
               <MiniComponentTwo />
@@ -63,13 +63,13 @@ function App() {
           </div>
         </div>
 
-        <div id='block-two'>
+        <div id='block-two' className={isModalOpen ? 'blurred-background' : ''}>
           {isMobile ? (
             <MobileAcq />
           ) : (
             <>
-              <BlockHello />
-              <BlockHelloPart />
+              <BlockHello/>
+              <BlockHelloPart onContactClick={openModal}/>
             </>
           )}
         </div>

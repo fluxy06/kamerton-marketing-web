@@ -105,7 +105,6 @@ button {
     cursor: pointer;
 }
 
-/* ===== МОДАЛКА ===== */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -154,14 +153,13 @@ button {
   opacity: 0.8;
 }
 
-/* ===== БЛЮР ВСЕГО ФОНА ===== */
+
 .blurred-background {
   filter: blur(8px);
   transition: filter 0.3s ease;
-  pointer-events: none; /* чтобы не кликалось под блюром */
+  pointer-events: none;
 }
 
-/* ===== АНИМАЦИИ ===== */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
