@@ -270,7 +270,7 @@ button {
 
     .modal-content {
     width: 100%;
-    max-width: 288px;          /* фиксируем размер на мобилках */
+    max-width: 288px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 15px;
@@ -284,10 +284,9 @@ button {
     justify-content: center;
 }
 
-/* Добавим базовую защиту для всего документа */
 html, body {
     width: 100%;
     max-width: 100vw;
-    overflow-x: hidden;        /* 🚫 Убираем горизонтальный скролл */
+    overflow-x: hidden;
 }
 }
