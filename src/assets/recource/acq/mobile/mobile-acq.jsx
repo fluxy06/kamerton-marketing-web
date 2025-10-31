@@ -2,6 +2,7 @@ import { Component } from "react";
 import '../mobile/mobile-acq.css'
 class MobileAcq extends Component {
     render() {
+        const { onContactClick } = this.props;
         return(
             <div id="mobile-acq-block">
                 <button id="mobile-button-about-as">о нас</button>
@@ -16,7 +17,7 @@ class MobileAcq extends Component {
                         ответственности и взаимном уважении.</p>
                 </div>
                 <div id="but-mob-cont">
-                    <button id="mobile-button-contact">cвязаться</button>
+                    <button id="mobile-button-contact" onClick={onContactClick}>cвязаться</button>
                 </div>
             </div>
         )

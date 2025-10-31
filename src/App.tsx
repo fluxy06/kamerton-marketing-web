@@ -65,7 +65,7 @@ function App() {
 
         <div id='block-two' className={isModalOpen ? 'blurred-background' : ''}>
           {isMobile ? (
-            <MobileAcq />
+            <MobileAcq onContactClick={openModal}/>
           ) : (
             <>
               <BlockHello/>
