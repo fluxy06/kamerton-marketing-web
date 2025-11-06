@@ -4,6 +4,8 @@ import Marketing from './components-catalog/marketing/mark';
 import ContactForm from '../forms/form-auth/formAuth';
 import Location from "./components-catalog/location/location";
 import Work from "./components-catalog/work/work";
+import Start from "./components-catalog/work/start";
+import ServicesCatalog from "./components-catalog/services/sercices";
 
 function Catalog() {
   // --- адаптивность
@@ -32,6 +34,8 @@ function Catalog() {
       <Marketing onContactClick={openModal} />
       <Location />
       <Work />
+      <Start onContactClick={openModal}/>
+      <ServicesCatalog />
       {isModalOpen && (
         <div className="modal-overlay" onClick={closeModal}>
           <button className="modal-close" onClick={closeModal}>✕</button>

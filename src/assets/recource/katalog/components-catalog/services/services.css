@@ -1,0 +1,197 @@
+.services-catalog {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    min-height: 600px;
+    margin-top: 25px;
+    box-sizing: border-box;
+}
+
+
+.services-catalog #button-container button {
+    font-size: 20px;
+    width: 130px;
+    height: 30px;
+    transition: 0.6s ease-out;
+    margin-top: 4px;
+}
+
+.services-catalog #button-container button:hover {
+    width: 135px;
+    height: 33px;
+    transition: 0.6s ease-out;
+}
+
+
+#card-services-componetns {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;       
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    min-height: 503px;
+    box-sizing: border-box;
+    gap: 15px;                    
+}
+
+
+#card-componetn-one {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    width: 380px;
+    height: 100%;
+    justify-items: center;
+    background-color: #202020;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+#card-componetn-one h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+}
+
+#button-scroll-container {
+    height: 70px;
+    width: 70px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#button-scroll {
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 600;
+    border: 0px;
+    background-color: #218E0B;
+    box-shadow: inset 0 0px 0 rgba(151, 48, 48, 0.1), 
+                0 0 6px rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.1),
+                 0 0 1.5px rgba(255, 255, 255, 0.4);
+    transition: 0.6s ease-out;
+    color: white;
+    cursor: pointer;
+}
+
+#button-scroll:hover {
+    width: 63px;
+    height: 63px;
+    margin-top: 30px;
+    border-radius: 50%;
+    font-size: 44px;
+    font-weight: 600;
+    border: 0px;
+    background-color: #2eb912;
+    box-shadow: inset 0 0px 0 rgba(255, 255, 255, 0.2), 
+                0 0 6px rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.2),
+                 0 0 3px rgba(255, 255, 255, 0.6);
+    transition: 0.6s ease-out;
+    color: white;
+    cursor: pointer;
+}
+
+
+#card-services-componetns #card-wrapper {
+    flex: 1 1 0;               
+    width: auto;
+    height: auto;
+    align-self: stretch;          
+    background-color: #202020;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+#card-services-componetns #img-banner {
+    width: 100%;
+    height: 100%;
+    flex: 1 1 auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px 25px 0 0;
+    opacity: 0.9;
+    transition: 0.4s ease;
+}
+
+#card-services-componetns #img-banner:hover {
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+#card-services-componetns #block-market {
+    flex: 0 0 auto;
+    padding: 15px 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#card-services-componetns #reclam {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#card-services-componetns #gabar {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    opacity: 0.8;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* --- Адаптив (мобильная версия) --- */
+@media screen and (max-width: 440px) {
+    .services-catalog {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    #card-services-componetns {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    #card-componetn-one {
+        width: 90%;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    #card-services-componetns #card-wrapper {
+        width: 90%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    #card-services-componetns #reclam {
+        font-size: 22px;
+    }
+
+    #card-services-componetns #gabar {
+        font-size: 14px;
+    }
+}
