@@ -1,0 +1,43 @@
+#location {
+    display: grid;
+    width: 1170px;
+    height: 475px;
+    margin-top: 25px;
+}
+#location-button-container {
+    display: grid;
+    height: 40px;
+}
+
+#location #button-container button {
+  font-size: 20px;
+    width: 125px;
+    height: 30px;
+    transition: 0.6s ease-out;
+    margin: 0px;
+}
+
+#location #button-container:hover button {
+    width: 130px;
+    height: 33px;
+    transition: 0.6s ease-out;
+}
+
+
+#location-map-placeholder {
+    display: grid;
+    width: 1170px;
+    height: 370px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: #404040;
+    border-radius: 17px;
+}
+
+#location p {
+    font: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}

@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import "./catalog.css";
 import Marketing from './components-catalog/marketing/mark';
 import ContactForm from '../forms/form-auth/formAuth';
+import Location from "./components-catalog/location/location";
+import Work from "./components-catalog/work/work";
 
 function Catalog() {
   // --- адаптивность
@@ -28,6 +30,8 @@ function Catalog() {
   return (
     <div id="window-wrapper-catalog" className="catalog">
       <Marketing onContactClick={openModal} />
+      <Location />
+      <Work />
       {isModalOpen && (
         <div className="modal-overlay" onClick={closeModal}>
           <button className="modal-close" onClick={closeModal}>✕</button>
