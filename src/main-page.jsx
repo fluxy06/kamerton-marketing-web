@@ -16,7 +16,7 @@ import MobileContactComponent from "./assets/recource/contact-part/mobile/Mobile
 import BigComponent from "./assets/recource/contact-part/contact-jsx/big-info";
 
 function MainPage() {
-  const { openModal } = useContext(ModalContext); // теперь берём функцию из контекста
+  const { openModal } = useContext(ModalContext);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 440);
   const navigate = useNavigate();
 
