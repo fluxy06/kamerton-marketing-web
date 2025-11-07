@@ -21,7 +21,7 @@ class ServicesCatalog extends Component {
   render() {
     return (
       <div className="services-catalog">
-        <MiniButton contentButton={"Услуги"} />
+          <MiniButton contentButton={"Услуги"} />
         <div id="card-services-componetns">
           <div id="card-componetn-one">
             <h1>Вернуться <br />на вверх</h1>

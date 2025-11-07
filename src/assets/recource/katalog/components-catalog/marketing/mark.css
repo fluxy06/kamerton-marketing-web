@@ -210,12 +210,14 @@
 
   #logo-image {
     order: 1;
-    width: 288px;       
-    height: auto;          
+    width: 100%;       
+    height: auto;  
+    max-width: 288px;        
     max-height: 299px;        
     object-fit: contain;
     border-radius: 8.88px;
     margin: 0 auto 0px auto;
+    margin-bottom: -20px;
   }
 
   #left-marketing-box {
@@ -223,7 +225,7 @@
     display: grid;
     justify-items: center;
     align-items: start;
-    width: 90%;
+    width: 100%;
     max-width: 288px;
     height: auto;
     border-radius: 22px;
@@ -247,6 +249,7 @@
     align-items: center;
     text-align: center;
     width: 100%;
+    max-width: 288px;
   }
 
   #mark-up-left-box h1 {
